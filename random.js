@@ -54,7 +54,7 @@
 
         let f = decodeNoise(factor);
         let fs = this[td.decode(new u8(f))];
-        if (!fs[ckey]) fs[ckey] = 0;
+        if (undefined === fs[ckey]) fs[ckey] = 0;
         let _factor = (fs[ckey] = ++fs[ckey]);
         if (!((_factor & 0b00000100) - 0b00000100)) {
             fs[ckey] = n_;
