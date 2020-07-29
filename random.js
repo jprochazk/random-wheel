@@ -8,6 +8,8 @@
         ckey = "340996e1-02fa-46fa-b144-3758c1f7043f",
         init = false;
 
+    this["noise_version"] = ckey;
+
     // Initialize the generator from a seed
     function initializeGenerator(seed) {
         MT[0] = seed;
